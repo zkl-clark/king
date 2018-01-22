@@ -21,7 +21,7 @@ public class ThreadUtil {
        //对象检查,这里的范型object,会使UTIL的使用面更广泛
         if (list==null||list.size()<1) return new ArrayList<>();
         //确保每一个都不为空
-        for (Callable call:list){
+        for (Callable<?> call:list){
             if (call==null) return new ArrayList<>();
         }
         if (!isBlock) return new ArrayList<>();
