@@ -1,0 +1,36 @@
+<configuration>
+	<!-- 本地模式 -->
+	<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://master:9000</value>
+	</property>
+	<property>
+		<name>fs.hdfs.impl</name>
+		<value>org.apache.hadoop.hdfs.DistributedFileSystem</value>
+	</property>
+	<property>
+		<name>fs.file.impl</name>
+		<value>org.apache.hadoop.fs.LocalFileSystem</value>
+		<description>The FileSystem for hdfs: uris.</description>
+	</property>
+	<property>
+		<name>yarn.resourcemanager.hostname</name>
+		<value>master</value>
+	</property>
+	<property>
+		<name>mapreduce.framework.name</name>
+		<value>yarn</value>
+	</property>
+	<property>
+		<name>mapreduce.app-submission.cross-platform</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>yarn.resourcemanager.scheduler.address</name>
+		<value>master:8030</value>
+	</property>
+	<property>
+		<name>mapred.jar</name>
+		<value>C:\Users\Administrator\Desktop\kingUtil.jar</value>
+	</property>
+</configuration>
